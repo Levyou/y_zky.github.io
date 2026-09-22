@@ -1,0 +1,5 @@
+/search.json
+  Cache-Control: public, max-age=86400
+
+/data/j/*
+  Cache-Control: public, max-age=86400

@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/search.json"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/data/j/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
