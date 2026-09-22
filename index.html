@@ -302,7 +302,7 @@
         <input id="q" name="q" type="search" placeholder="输入刊名、ISSN 或 EISSN，例如 Nature 或 0028-0836" disabled />
         <button class="primary" id="search-btn" type="submit" disabled>查询</button>
       </form>
-      <p class="hint">支持模糊刊名与标准 ISSN（含或不含连字符）。小类自 2008 年起收录；升级版自 2019 年起。可部署到 GitHub Pages / Cloudflare Pages / Netlify。</p>
+      <p class="hint">支持模糊刊名与标准 ISSN（含或不含连字符）。小类自 2008 年起收录；升级版自 2019 年起。</p>
       <div id="results" class="results" role="listbox"></div>
     </section>
 
@@ -455,7 +455,6 @@
           upgrade[0] + "–" + upgrade[upgrade.length - 1] + "。";
       }
       $("meta-row").innerHTML = [
-        chip("可离线检索 · 纯静态"),
         chip("期刊 " + Number(count).toLocaleString("zh-CN") + " 种"),
         basic.length ? chip("基础版 " + basic[0] + "–" + basic[basic.length - 1]) : "",
         upgrade.length ? chip("升级版 " + upgrade.join(" / ")) : "",
@@ -776,5 +775,8 @@
       console.error(err);
     });
   </script>
+  <footer style="text-align:center; padding:20px; font-size:14px; color:#666;">
+    © 2026 Design by y.
+  </footer>
 </body>
 </html>
